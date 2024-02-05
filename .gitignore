@@ -1,0 +1,14 @@
+*.iml
+.gradle
+.idea
+.DS_Store
+build
+captures
+.externalNativeBuild
+.cxx
+local.properties
+xcuserdata
+SECRETS.properties
+*.ENV.properties
+*.log
+server/parkinpeace.db
