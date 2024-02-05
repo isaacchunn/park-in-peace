@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T19:47:52.584Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="gcZ6E8zCvcujZ1i68WqA" version="22.1.3" type="google">
+  <diagram name="Page-1" id="53YWux6Wl9kRtei8sB1Y">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kxQevw5CyaERJLVQqlvT-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:5px;text-align:left;&quot;&gt;&lt;b&gt;sd&lt;/b&gt;  U15 Notify Carpark Full&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;overflow=fill;labelX=158.5;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;" vertex="1" parent="1">
+          <mxGeometry width="710" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-2" value="FirebaseApi" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="50" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="kxQevw5CyaERJLVQqlvT-2">
+          <mxGeometry x="20" y="60" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="kxQevw5CyaERJLVQqlvT-2">
+          <mxGeometry x="25" y="88" width="10" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-6" value="receiveMsg()" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="kxQevw5CyaERJLVQqlvT-2" target="kxQevw5CyaERJLVQqlvT-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="30" y="68" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="60" y="98" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-3" value="NavigationService" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="217" y="50" width="40" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="kxQevw5CyaERJLVQqlvT-3">
+          <mxGeometry x="15" y="110" width="10" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="kxQevw5CyaERJLVQqlvT-3">
+          <mxGeometry x="20" y="150" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-10" value="displayNotification()" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="kxQevw5CyaERJLVQqlvT-3" target="kxQevw5CyaERJLVQqlvT-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="25" y="130" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="55" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-8" value="warnCarparkFull(carparkId)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=-5;exitPerimeter=0;" edge="1" parent="1" source="kxQevw5CyaERJLVQqlvT-5" target="kxQevw5CyaERJLVQqlvT-7">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="140" y="210" as="sourcePoint" />
+            <mxPoint x="220" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-11" value="Android System" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="410" y="45" width="50" height="325" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-14" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="kxQevw5CyaERJLVQqlvT-11">
+          <mxGeometry x="20" y="185" width="10" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-12" value="Guest" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="580" y="45" width="20" height="325" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-15" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="kxQevw5CyaERJLVQqlvT-12">
+          <mxGeometry x="5" y="190" width="10" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-13" value="display notification" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1" source="kxQevw5CyaERJLVQqlvT-14" target="kxQevw5CyaERJLVQqlvT-15">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="460" y="240" as="sourcePoint" />
+            <mxPoint x="540" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-16" value="ref" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="270" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kxQevw5CyaERJLVQqlvT-17" value="U14 Change Carpark" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="310" width="145" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

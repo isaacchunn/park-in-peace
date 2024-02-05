@@ -1,0 +1,150 @@
+# Get the following VS Code Extension
+# Name: REST Client
+# Id: humao.rest-client
+# Description: REST Client for Visual Studio Code
+# Version: 0.25.1
+# Publisher: Huachao Mao
+# VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+#
+# Once Installed, you will see [Send Request] above every URL
+
+
+# ------------------------------------------#
+#              CONFIGURATION                #
+# ------------------------------------------#
+
+@endpoint = http://172.21.148.166
+# Uncomment if running locally
+#@endpoint = http://127.0.0.1:8080
+
+# Set the carpark id here
+@id = 01HENGJKF0JSTR4DRBHMWPESKH
+
+###
+# POST /api/v1/carpark/nearby
+# queryNearby
+# 
+# Query all car parks within a set distance from a given location, optionally returning the estimated travel time and travelling distance
+#
+# IMPORTANT NOTES
+# For encoding coordinates use the following mappings: 
+#   + -> %2B 
+#   / -> %2F 
+# "+01.234+009.4256/" -> "%2B01.234%2B009.4256%2F"
+POST {{endpoint}}/api/v1/carpark/nearby
+    ?location=%2B01.3180114%2B103.8624013%2F
+    #&origin=%2B01.3722655%2B103.8288232%2F
+    &searchRadius=500
+    &full=true
+    &page=1
+
+###
+# GET /api/v1/carpark/{id}
+# getCarparkById
+#
+# Get basic information about a car park, e.g. name, address, coordinates, pricing, etc.
+# Use the following to get a single car park by id
+GET {{endpoint}}/api/v1/carpark/{{id}}
+
+###
+# POST /api/v1/carpark/{id}
+# postCarparkById
+# 
+# Get realtime information about a car park, e.g. current vacancy and predicted vacancy etc
+# Use the following to get a single CarparkAvailability by id
+POST {{endpoint}}/api/v1/carpark/{{id}}
+    ?full=true
+    #&origin=%2B01.3039798%2B103.8320324%2F
+
+# ------------------------------------------#
+#              MISCELLANEOUS                #
+# ------------------------------------------#
+
+###
+# Undocumented API
+# Use the following to generate a random carpark and copy the id returned
+# @name generated
+GET {{endpoint}}/testcp0
+
+# @id = {{generated.response.body.id}}
+
+###
+# Undocumented API
+# Use the following to generate random vacancies for a carpark
+GET {{endpoint}}/testcp1/{{id}}
+
+
+# ------------------------------------------#
+#             OTHER APIS                    #
+# ------------------------------------------#
+
+###
+# OneMap API Search
+GET https://www.onemap.gov.sg/api/common/elastic/search
+    ?searchVal=NTU
+    &returnGeom=Y
+    &getAddrDetails=Y
+    &pageNum=1
+
+###
+# OneMap GetToken
+# @name onemap
+# @prompt onemapEmail Email address used to sign up for OneMap API access
+# @prompt onemapPassword "Password"
+POST https://www.onemap.gov.sg/api/auth/post/getToken
+Content-Type: application/json
+
+{"email":"{{onemapEmail}}","password":"{{onemapPassword}}"}
+
+###
+@onemapAccessToken = {{onemap.response.body.access_token}}
+# OneMap Reverse Geocode
+GET https://www.onemap.gov.sg/api/public/revgeocodexy
+    #?location=38163.5326,32726.474
+    ?location=33990.009,33036.8481
+    &buffer=20
+    &addressType=All
+    &otherFeatures=Y
+Authorization: {{onemapAccessToken}}
+
+###
+# OneMap Convert EPSG:3414 to EPSG:4326
+GET https://www.onemap.gov.sg/api/common/convert/3414to4326
+    ?X=38163.5326
+    &Y=32726.474
+Authorization: {{onemapAccessToken}}
+
+###
+# MapBox Directions Matrix API 
+# @prompt mapboxAccessToken MapBox public access token
+GET https://api.mapbox.com/directions-matrix/v1/mapbox/driving/103.6809727,1.343059;103.8204372,1.2904955;103.9890776,1.3603411;103.8320324,1.3039798
+    ?annotations=duration,distance
+    &sources=0
+    &access_token={{mapboxAccessToken}}
+
+###
+# URA Get Token
+# @name ura
+# @prompt uraAccessKey
+GET https://www.ura.gov.sg/uraDataService/insertNewToken.action
+AccessKey: {{uraAccessKey}}
+
+@uraAccessKey = {{ura.request.headers.AccessKey}}
+@uraAccessToken = {{ura.response.body.Result}}
+
+###
+# URA Get Car Park List and Rates
+GET https://www.ura.gov.sg/uraDataService/invokeUraDS?service=Car_Park_Details
+AccessKey: {{uraAccessKey}}
+Token: {{uraAccessToken}}
+
+###
+# LTA DataMall Carpark Availability
+# @prompt ltaAccountKey
+GET http://datamall2.mytransport.sg/ltaodataservice/CarParkAvailabilityv2
+AccountKey: {{ltaAccountKey}}
+
+
+###
+# data.gov.sg Carpark Availability
+GET https://api.data.gov.sg/v1/transport/carpark-availability

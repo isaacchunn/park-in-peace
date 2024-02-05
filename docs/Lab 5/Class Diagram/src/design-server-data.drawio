@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T10:21:13.866Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="z6IU1M_j4FJjPTPw0VxL" version="22.1.3" type="google">
+  <diagram id="ZCWx1ih_MYZB6AVy63tT" name="Page-1">
+    <mxGraphModel grid="1" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-1" value="data" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;strokeWidth=4;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="-1500" y="-310" width="1220" height="1770" as="geometry" />
+        </mxCell>
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-2" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;strokeWidth=3;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry width="1220" height="938.1" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-12" value="repositories" style="shape=folder;fontStyle=1;tabWidth=120;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;fontSize=20;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="10" y="40" width="1000" height="712" as="geometry" />
+        </mxCell>
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-13" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-12">
+          <mxGeometry width="1000.0000000000002" height="498.4" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;AvailabilityRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  observe(Flow&amp;lt;List&amp;lt;ExternalAvailabilitySource&amp;gt;&amp;gt;): Unit&lt;br/&gt;+ suspend  get(String?, Instant): List&amp;lt;Availability&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-12">
+          <mxGeometry x="511.5" y="62" width="443" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="node6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AvailabilityRepositoryImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- suspend  hookDatagovCapacityFix(List&amp;lt;ExternalAvailabilitySource&amp;gt;): Unit&lt;br/&gt;- suspend  onAvailabilityRefreshed(List&amp;lt;ExternalAvailabilitySource&amp;gt;): Unit&lt;br/&gt;+ suspend  get(String?, Instant): List&amp;lt;Availability&amp;gt;&lt;br/&gt;+ suspend  observe(Flow&amp;lt;List&amp;lt;ExternalAvailabilitySource&amp;gt;&amp;gt;): Unit&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-12">
+          <mxGeometry x="501.5" y="199" width="490" height="133" as="geometry" />
+        </mxCell>
+        <mxCell id="node7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;CarparkRepository&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  observe(Flow&amp;lt;List&amp;lt;ExternalCarparkSource&amp;gt;&amp;gt;): Unit&lt;br/&gt;+ suspend  updateCapacity(ULID, VehicleType, Int): Unit&lt;br/&gt;+ suspend  filterAndGet(Coordinate, Int, Int): IOFlow&amp;lt;Carpark&amp;gt;&lt;br/&gt;+ suspend  get(String?): Carpark&lt;br/&gt;+ filter(Coordinate, Int, Int): List&amp;lt;String&amp;gt;&lt;br/&gt;+ contains(String?): Boolean&lt;br/&gt;+ resolve(Ref?): ULID?&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-12">
+          <mxGeometry x="24.5" y="62" width="427" height="207" as="geometry" />
+        </mxCell>
+        <mxCell id="node8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CarparkRepositoryImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ resolve(Ref?): ULID?&lt;br/&gt;+ suspend  updateCapacity(ULID, VehicleType, Int): Unit&lt;br/&gt;+ suspend  filterAndGet(Coordinate, Int, Int): IOFlow&amp;lt;Carpark&amp;gt;&lt;br/&gt;- suspend  sync(): Unit&lt;br/&gt;+ filter(Coordinate, Int, Int): List&amp;lt;String&amp;gt;&lt;br/&gt;- updateStructures(RawDbCarpark): Unit&lt;br/&gt;- updateStructures(List&amp;lt;RawDbCarpark&amp;gt;): Unit&lt;br/&gt;+ suspend  observe(Flow&amp;lt;List&amp;lt;ExternalCarparkSource&amp;gt;&amp;gt;): Unit&lt;br/&gt;- suspend  tryResolveCarparks(Int): Unit&lt;br/&gt;+ contains(String?): Boolean&lt;br/&gt;- suspend  resolveAndUpdate(RawDbCarpark): RawDbCarpark&lt;br/&gt;- suspend  monitor(): Unit&lt;br/&gt;- suspend  onCarparkRefreshed(List&amp;lt;ExternalCarparkSource&amp;gt;): Unit&lt;br/&gt;+ suspend  get(String?): Carpark&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-12">
+          <mxGeometry x="8.5" y="319" width="458" height="375" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.001;entryDx=0;entryDy=0;" edge="1" parent="rnNDRO2h_1QXlpHV6Kdt-12" source="node6" target="node5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge4" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;" edge="1" parent="rnNDRO2h_1QXlpHV6Kdt-12" source="node8" target="node7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Ref&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="936" y="780" width="76" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  HdbRef&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; value: String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="727" y="858" width="153" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  LtaRef&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; value: String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="1068" y="858" width="145" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="node4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  RawDbCarpark&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;br/&gt; ref: String&lt;br/&gt; features: List&amp;lt;Feature&amp;gt;&lt;br/&gt; hash: String&lt;br/&gt; epsg4326: Coordinate?&lt;br/&gt; active: Boolean&lt;br/&gt; lots: List&amp;lt;Lot&amp;gt;&lt;br/&gt; epsg3414: String&lt;br/&gt; address: String?&lt;br/&gt; asof: Instant&lt;br/&gt; id: ULID&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="500" y="796" width="210" height="303" as="geometry" />
+        </mxCell>
+        <mxCell id="node2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  UraRef&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; value: String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="900" y="858" width="148" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.500;exitY=0.001;exitDx=0;exitDy=0;entryX=0.500;entryY=1.002;entryDx=0;entryDy=0;" edge="1" parent="rnNDRO2h_1QXlpHV6Kdt-1" source="node0" target="node1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="803" y="833" />
+              <mxPoint x="974" y="833" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.500;exitY=0.001;exitDx=0;exitDy=0;entryX=0.500;entryY=1.002;entryDx=0;entryDy=0;" edge="1" parent="rnNDRO2h_1QXlpHV6Kdt-1" source="node3" target="node1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="833" />
+              <mxPoint x="974" y="833" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge0" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.500;exitY=0.001;exitDx=0;exitDy=0;entryX=0.500;entryY=1.002;entryDx=0;entryDy=0;" edge="1" parent="rnNDRO2h_1QXlpHV6Kdt-1" source="node2" target="node1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-5" value="external" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;fontSize=20;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="500" y="1110" width="578" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-6" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry width="578" height="455" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;ExternalAvailabilitySource&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry x="18" y="50" width="250" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="node15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;ExternalCarparkSource&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry x="14" y="410" width="228" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="node14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  DatagovAvailability&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; asof: Instant&lt;br/&gt; capacity: Int&lt;br/&gt; vehicleType: VehicleType&lt;br/&gt; ref: Ref&lt;br/&gt; availability: Int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry x="322" y="218" width="242" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="node19" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  DatagovCarpark&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;br/&gt; epsg3414: String&lt;br/&gt; lots: List&amp;lt;Lot&amp;gt;&lt;br/&gt; ref: Ref&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry x="14" y="458" width="220" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="node18" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  LtaCarparkAvailability&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;br/&gt; epsg4326: Coordinate&lt;br/&gt; lotType: VehicleType&lt;br/&gt; ref: Ref&lt;br/&gt; availability: Int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry x="14" y="218" width="263" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="node17" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  UraAvailability&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; uraId: String&lt;br/&gt; availabilities: Map&amp;lt;VehicleType, Int&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry x="18" y="98" width="271" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="node20" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;data&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;data  UraCarpark&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt; name: String&lt;br/&gt; epsg3414: String?&lt;br/&gt; lots: List&amp;lt;Lot&amp;gt;&lt;br/&gt; uraId: String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-5">
+          <mxGeometry x="279" y="458" width="183" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-3" value="db" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;fontSize=20;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-1">
+          <mxGeometry x="10" y="790" width="460" height="890" as="geometry" />
+        </mxCell>
+        <mxCell id="rnNDRO2h_1QXlpHV6Kdt-4" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-3">
+          <mxGeometry width="460" height="623" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;AvailabilityDao&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  read(String, Instant): List&amp;lt;Availability&amp;gt;&lt;br/&gt;+ suspend  create(List&amp;lt;Availability&amp;gt;): Unit&lt;br/&gt;- suspend  dbQuery(suspend (Transaction) -&amp;gt; T): T&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-3">
+          <mxGeometry x="33.5" y="271" width="354" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="node10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CarparkHashesDao&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  sync(String, String): ReplaceStatement&amp;lt;Long&amp;gt;&lt;br/&gt;- deleteHash(String): Int&lt;br/&gt;+ suspend  read(String): String&lt;br/&gt;+ suspend  delete(String): Int&lt;br/&gt;- suspend  dbQuery(suspend (Transaction) -&amp;gt; T): T&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-3">
+          <mxGeometry x="33.5" y="700" width="393" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="node11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FeaturesDao&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  reads(String): List&amp;lt;Feature&amp;gt;&lt;br/&gt;+ suspend  deletes(String): Unit&lt;br/&gt;+ suspend  sync(String, List&amp;lt;Feature&amp;gt;): Unit&lt;br/&gt;- suspend  dbQuery(suspend (Transaction) -&amp;gt; T): T&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-3">
+          <mxGeometry x="33.5" y="396" width="354" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="node12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RatesDao&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  deletes(String): Unit&lt;br/&gt;+ suspend  sync(String, List&amp;lt;Lot&amp;gt;): Unit&lt;br/&gt;+ suspend  reads(String): List&amp;lt;Lot&amp;gt;&lt;br/&gt;- suspend  dbQuery(suspend (Transaction) -&amp;gt; T): T&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-3">
+          <mxGeometry x="33.5" y="548" width="354" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="node13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RawCarparkDao&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  read(String): RawDbCarpark&lt;br/&gt;- suspend  dbQuery(suspend (Transaction) -&amp;gt; T): T&lt;br/&gt;+ suspend  sync(RawDbCarpark, Boolean): Unit&lt;br/&gt;+ suspend  sync(List&amp;lt;RawDbCarpark&amp;gt;, Boolean): Unit&lt;br/&gt;+ suspend  readAll(): List&amp;lt;RawDbCarpark&amp;gt;&lt;br/&gt;+ suspend  create(RawDbCarpark): Unit&lt;br/&gt;+ suspend  has(String): Boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="rnNDRO2h_1QXlpHV6Kdt-3">
+          <mxGeometry x="33.5" y="60" width="367" height="207" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T18:56:36.522Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="d12iRy3zJ0Y_8nTAb8BK" version="22.1.3" type="google">
+  <diagram name="Page-1" id="smEEv56Bvjnig0mvlvbs">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:5px;text-align:left;&quot;&gt;&lt;b&gt;sd &lt;/b&gt;U11 Log Car Park Visit&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;overflow=fill;labelX=152;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="50" width="500" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-2" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;&amp;nbsp; &amp;nbsp;MapUI&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="270" y="80" width="50" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="ClLpjQsGxKZVZprrNbhz-2">
+          <mxGeometry x="20" y="120" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-3" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;MapViewModel&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="40" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="ClLpjQsGxKZVZprrNbhz-3">
+          <mxGeometry x="15" y="120" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-7" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;mark trip as complete&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="179" y="202" as="sourcePoint" />
+            <mxPoint x="290" y="202" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-8" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;updateHistory(location)&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="300" y="212.57999999999998" as="sourcePoint" />
+            <mxPoint x="415" y="212.57999999999993" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-9" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;VisitedLocationsDb&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="40" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-11" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="ClLpjQsGxKZVZprrNbhz-9">
+          <mxGeometry x="15" y="134" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-10" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;insertLocation(location)&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0069" width="80" relative="1" as="geometry">
+            <mxPoint x="425" y="221" as="sourcePoint" />
+            <mxPoint x="535" y="221" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LIVI2G9eywygEVNl72Eq-1" value="Guest" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="164" y="80" width="20" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="ClLpjQsGxKZVZprrNbhz-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="LIVI2G9eywygEVNl72Eq-1">
+          <mxGeometry x="5" y="110" width="10" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T19:48:34.663Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="TdOXTu-O6eUGNugBLR26" version="22.1.3" type="google">
+  <diagram name="Page-1" id="N13O38V-AXSbOdfR1BGi">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-21" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:5px;text-align:left;&quot;&gt;&lt;b&gt;sd &lt;/b&gt;U9 Visit Car Park&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;overflow=fill;labelX=128;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;" vertex="1" parent="1">
+          <mxGeometry x="100" y="55" width="700" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-2" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;CarparkInfo&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="310" y="80" width="50" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-5" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Click Google Map button&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0;exitDx=0;exitDy=5;exitPerimeter=0;" edge="1" parent="1" source="GKqyBo9AuMGzC2Ftg3pA-3" target="GKqyBo9AuMGzC2Ftg3pA-10">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="200" as="sourcePoint" />
+            <mxPoint x="260" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-8" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;MapViewModel&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="430" y="80" width="40" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:5px;text-align:left;&quot;&gt;&lt;b&gt;ref&lt;/b&gt;&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;overflow=fill;labelX=26.86;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;fillColor=#ffffff00;" vertex="1" parent="1">
+          <mxGeometry x="290" y="170" width="500" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-11" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Sequence Diagram - U10 Monitor Car Park Vacancy&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="180" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-12" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Sequence Diagram - U12 Launch Google Maps&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="215" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-13" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;NavigationService&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="40" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-17" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Mark Trip as Completed&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0.001;entryY=0.192;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aPrXl1m5nsFc5p-ovw89-2" target="GKqyBo9AuMGzC2Ftg3pA-19">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="180" y="310" as="sourcePoint" />
+            <mxPoint x="290" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-18" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;VisitedLocationsDb&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="530" y="80" width="40" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-19" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:5px;text-align:left;&quot;&gt;&lt;b&gt;ref&lt;/b&gt;&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;overflow=fill;labelX=26.86;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;fillColor=#ffffff00;" vertex="1" parent="1">
+          <mxGeometry x="290" y="280" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-20" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Sequence Diagram - U11 Log Car Park Visit&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="310" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aPrXl1m5nsFc5p-ovw89-1" value="Guest" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="170" y="95" width="20" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="GKqyBo9AuMGzC2Ftg3pA-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aPrXl1m5nsFc5p-ovw89-1">
+          <mxGeometry x="5" y="115" width="10" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="aPrXl1m5nsFc5p-ovw89-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aPrXl1m5nsFc5p-ovw89-1">
+          <mxGeometry x="5" y="195" width="10" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="Vw9sM2YTd7wzR_I1UBbo-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;PipApi&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="720" y="80" width="50" height="300" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,142 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T10:49:05.175Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" version="22.1.3" etag="02kz0X8-8n4M6ZkVM8vI" type="google">
+  <diagram id="R_Dm9LAqpqMH0c88ingn" name="Page-1">
+    <mxGraphModel grid="1" page="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1200" pageHeight="1920" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IGamixkjmrFhap-CX6XP-22" value="api" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;fontSize=20;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="-350" y="-1730" width="2000" height="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-23" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="IGamixkjmrFhap-CX6XP-22">
+          <mxGeometry width="1999.9999999999998" height="735" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-1" value="onemap" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;strokeWidth=1;fontSize=20;" vertex="1" parent="IGamixkjmrFhap-CX6XP-22">
+          <mxGeometry x="22.5" y="60" width="460" height="408" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-2" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="IGamixkjmrFhap-CX6XP-1">
+          <mxGeometry width="460.00000000000006" height="285.6" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;OneMapApiImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  lookupPossibleAddresses(String): List&amp;lt;String&amp;gt;&lt;br&gt;+ suspend  lookupPossibleAddresses(Coordinate): List&amp;lt;String&amp;gt;&lt;br&gt;+ suspend  getToken(): String&lt;br&gt;+ suspend  convertEpsg3414To4326(String): Coordinate&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- service: Service&lt;br&gt;- hasTokenExpired: Boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-1">
+          <mxGeometry x="16.5" y="211" width="427" height="184" as="geometry" />
+        </mxCell>
+        <mxCell id="node15" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;OneMapApi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  lookupPossibleAddresses(String): List&amp;lt;String&amp;gt;&lt;br/&gt;+ suspend  lookupPossibleAddresses(Coordinate): List&amp;lt;String&amp;gt;&lt;br/&gt;+ suspend  convertEpsg3414To4326(String): Coordinate&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-1">
+          <mxGeometry x="16.5" y="48" width="427" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;" edge="1" parent="IGamixkjmrFhap-CX6XP-1" source="node16" target="node15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-3" value="ura" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;strokeWidth=1;fontSize=20;" vertex="1" parent="IGamixkjmrFhap-CX6XP-22">
+          <mxGeometry x="502.5" y="60" width="905" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-4" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="IGamixkjmrFhap-CX6XP-3">
+          <mxGeometry width="905" height="364" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;UraApi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  getNonSeasonCarparks(): List&amp;lt;RawCarparkListAndRates&amp;gt;&lt;br/&gt;+ suspend  getCarparkLots(): List&amp;lt;RawCarparkLotsInner&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-3">
+          <mxGeometry x="16" y="50" width="468" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="node2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UraApiAdapterKt&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- pickEpsg3414(List&amp;lt;RawCarparkListAndRates&amp;gt;): String&lt;br/&gt;- getLots(RawCarparkListAndRates): List&amp;lt;Lot&amp;gt;&lt;br/&gt;+ suspend  getAvailabilities(UraApi): List&amp;lt;UraAvailability&amp;gt;&lt;br/&gt;- asParkingSystemOrThrow(String?): ParkingSystem&lt;br/&gt;- asRateInCentsOrThrow(String?): Int&lt;br/&gt;- asVehicleCatOrThrow(String?): VehicleType&lt;br/&gt;- asDurationInMinutesOrThrow(String?): Int&lt;br/&gt;- asVehicleTypeOrThrow(String?): VehicleType&lt;br/&gt;+ suspend  getAllCarparks(UraApi): List&amp;lt;UraCarpark&amp;gt;&lt;br/&gt;- asLocalTimeOrThrow(String?): LocalTime&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-3">
+          <mxGeometry x="501" y="243" width="388" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UraApiImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  getToken(): String&lt;br&gt;+ suspend  getNonSeasonCarparks(): List&amp;lt;RawCarparkListAndRates&amp;gt;&lt;br&gt;+ suspend  getCarparkLots(): List&amp;lt;RawCarparkLotsInner&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- service: Service&lt;br&gt;- hasTokenExpired: Boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-3">
+          <mxGeometry x="16" y="193" width="468" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="node1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;UraI18n&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ parseTimeOrNull(String?): LocalTime?&lt;br/&gt;+ parseDurationInMinsOrNull(String?): Int?&lt;br/&gt;+ parseVehicleCatOrNull(String?): VehicleType?&lt;br/&gt;+ parseVehicleTypeOrNull(String?): VehicleType?&lt;br/&gt;+ parseParkingSystemOrNull(String?): ParkingSystem?&lt;br/&gt;+ parseRateInCentsOrNull(String?): Int?&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-3">
+          <mxGeometry x="501" y="50" width="372" height="183" as="geometry" />
+        </mxCell>
+        <mxCell id="edge0" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;" edge="1" parent="IGamixkjmrFhap-CX6XP-3" source="node3" target="node0">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-5" value="mapbox" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;strokeWidth=1;fontSize=20;" vertex="1" parent="IGamixkjmrFhap-CX6XP-22">
+          <mxGeometry x="1042.5" y="670" width="460" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-6" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="IGamixkjmrFhap-CX6XP-5">
+          <mxGeometry width="460.00000000000006" height="210" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node13" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;MapBoxApi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  travel(Coordinate, List&amp;lt;Coordinate&amp;gt;): TravelResult&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-5">
+          <mxGeometry x="21" y="40" width="418" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="node14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;MapBoxApiImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  travel(Coordinate, List&amp;lt;Coordinate&amp;gt;): TravelResult&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- service: Service&lt;br&gt;- ACCESS_TOKEN: String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-5">
+          <mxGeometry x="21" y="160" width="418" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.001;entryDx=0;entryDy=0;" edge="1" parent="IGamixkjmrFhap-CX6XP-5" source="node14" target="node13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-11" value="datagovsg" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;strokeWidth=1;fontSize=20;" vertex="1" parent="IGamixkjmrFhap-CX6XP-22">
+          <mxGeometry x="22.5" y="570" width="1010" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-12" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="IGamixkjmrFhap-CX6XP-11">
+          <mxGeometry width="1010" height="308" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;DatagovsgApi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  getCarparkAvailability(): RawCarparkAvailabilityResponse&lt;br/&gt;+ suspend  getCarparks(): List&amp;lt;RawCarparkResponse&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-11">
+          <mxGeometry x="30" y="61" width="460" height="109" as="geometry" />
+        </mxCell>
+        <mxCell id="node7" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DatagovsgApiV1Impl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  getCarparkAvailability(): RawCarparkAvailabilityResponse&lt;br&gt;+ suspend  getCarparks(): List&amp;lt;RawCarparkResponse&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- service: Service&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-11">
+          <mxGeometry x="30" y="208" width="460" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="node5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DatagovsgI18n&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ parseParkingSystemOrNull(String?): ParkingSystem?&lt;br/&gt;+ parseFreeParkingOrNull(String?): Boolean?&lt;br/&gt;+ parseVehicleTypeOrNull(String?): VehicleType?&lt;br/&gt;+ parseNightParkingOrNull(String?): Boolean?&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-11">
+          <mxGeometry x="504" y="274" width="372" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;" edge="1" parent="IGamixkjmrFhap-CX6XP-11" source="node7" target="node4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DatagovsgApiAdapterKt&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  getAllCarparks(DatagovsgApi): List&amp;lt;DatagovCarpark&amp;gt;&lt;br/&gt;- asVehicleTypeOrThrow(String?): VehicleType&lt;br/&gt;- hasNightParkingOrThrow(String?): Boolean&lt;br/&gt;- asParkingSystemOrThrow(String?): ParkingSystem&lt;br/&gt;+ suspend  getAvailabilities(DatagovsgApi): List&amp;lt;DatagovAvailability&amp;gt;&lt;br/&gt;- hdbLotConfig((HdbLotConfiguration) -&amp;gt; Unit): List&amp;lt;Lot&amp;gt;&lt;br/&gt;- hasFreeParkingOrThrow(String?): Boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-11">
+          <mxGeometry x="504" y="61" width="463" height="207" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-13" value="lta" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;strokeWidth=1;fontSize=20;" vertex="1" parent="IGamixkjmrFhap-CX6XP-22">
+          <mxGeometry x="1432.5" y="90" width="545" height="590" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-14" value="l" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;" vertex="1" parent="IGamixkjmrFhap-CX6XP-13">
+          <mxGeometry width="545" height="413" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;LtaApi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  getCarparkAvailability(): List&amp;lt;RawCarparkAvailability&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-13">
+          <mxGeometry x="20" y="50" width="439" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="node11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LtaApiAdapterKt&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- asCoordinateOrThrow(String?): Coordinate&lt;br/&gt;+ suspend  getCarparksAndAvailabilities(LtaApi): List&amp;lt;LtaCarparkAvailability&amp;gt;&lt;br/&gt;- asRefOrThrow(String?, String): Ref&lt;br/&gt;- asVehicleTypeOrThrow(String?): VehicleType&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-13">
+          <mxGeometry x="20" y="294" width="513" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="node12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LtaApiImpl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ suspend  getCarparkAvailability(): List&amp;lt;RawCarparkAvailability&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- service: Service&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-13">
+          <mxGeometry x="20" y="177" width="439" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="node10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;LtaI18n&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ parseVehicleTypeOrNull(String?): VehicleType?&lt;br/&gt;+ parseCoordinateOrNull(String?): Coordinate?&lt;br/&gt;+ parseRefOrNull(String?, String?): Ref?&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-13">
+          <mxGeometry x="20" y="451" width="338" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;" edge="1" parent="IGamixkjmrFhap-CX6XP-13" source="node12" target="node9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-17" value="firebase" style="shape=folder;fontStyle=1;tabWidth=110;tabHeight=30;tabPosition=left;html=1;boundedLbl=1;labelInHeader=1;container=1;collapsible=0;whiteSpace=wrap;fontSize=19;" vertex="1" parent="IGamixkjmrFhap-CX6XP-22">
+          <mxGeometry x="1512.5" y="700" width="150" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IGamixkjmrFhap-CX6XP-18" value="" style="html=1;strokeColor=none;resizeWidth=1;resizeHeight=1;fillColor=none;part=1;connectable=0;allowArrows=0;deletable=0;whiteSpace=wrap;fontSize=20;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-17">
+          <mxGeometry width="150" height="70" relative="1" as="geometry">
+            <mxPoint y="30" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="node8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;FirebaseApi&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="IGamixkjmrFhap-CX6XP-17">
+          <mxGeometry x="4.5" y="50" width="141" height="35" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

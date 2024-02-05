@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" modified="2023-11-18T18:56:08.639Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="G-a3552XybbwAHMs5TyF" version="22.1.3" type="google">
+  <diagram name="Page-1" id="WaAHQl3PMxVdARPGnKF7">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PoE262mmt78QeytMc_Vo-13" value="&lt;p style=&quot;margin:0px;margin-top:4px;margin-left:5px;text-align:left;&quot;&gt;&lt;b&gt;sd &lt;/b&gt;U12 Launch Google Maps&lt;/p&gt;" style="html=1;shape=mxgraph.sysml.package;overflow=fill;labelX=178;align=left;spacingLeft=5;verticalAlign=top;spacingTop=-3;" vertex="1" parent="1">
+          <mxGeometry x="70" y="50" width="400" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="PoE262mmt78QeytMc_Vo-6" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp;CarparkInfo&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;" vertex="1" parent="1">
+          <mxGeometry x="230" y="80" width="50" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="PoE262mmt78QeytMc_Vo-9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="PoE262mmt78QeytMc_Vo-6">
+          <mxGeometry x="20" y="110" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PoE262mmt78QeytMc_Vo-7" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;MapViewModel&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="40" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="PoE262mmt78QeytMc_Vo-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="PoE262mmt78QeytMc_Vo-7">
+          <mxGeometry x="15" y="120" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PoE262mmt78QeytMc_Vo-11" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Click visit carpark button&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="135.0000000000001" y="199" as="sourcePoint" />
+            <mxPoint x="250.0000000000001" y="199" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PoE262mmt78QeytMc_Vo-12" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;redirectGoogleMaps()&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="260" y="209" as="sourcePoint" />
+            <mxPoint x="375" y="209" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jb-d5VGy4rZS-RD-a7Un-1" value="Guest" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;" vertex="1" parent="1">
+          <mxGeometry x="120" y="90" width="20" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PoE262mmt78QeytMc_Vo-8" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="jb-d5VGy4rZS-RD-a7Un-1">
+          <mxGeometry x="5" y="100" width="10" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jb-d5VGy4rZS-RD-a7Un-2" value="Google Maps is launched" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="325" y="234" width="110" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

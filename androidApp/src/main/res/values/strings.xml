@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Park In Peace</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaXNhYWNjaHVubiIsImEiOiJjbG85cXRjbjkwYjMyMndycWVjMHNtM2ZrIn0.zI6d0eeT78pfBwYHYyBomw</string>
+    <string name="title_history">History</string>
+    <string name="title_explore">Explore</string>
+    <string name="title_settings">Settings</string>
+</resources>
